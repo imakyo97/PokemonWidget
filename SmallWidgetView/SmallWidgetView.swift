@@ -83,6 +83,7 @@ struct SmallWidgetEntryView : View {
     }
 }
 
+@main
 struct SmallWidget: Widget {
     let kind: String = "SmallWidget"
 
