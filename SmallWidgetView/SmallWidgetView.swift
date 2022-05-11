@@ -9,10 +9,6 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-import WidgetKit
-import SwiftUI
-import Intents
-
 struct SmallProvider: IntentTimelineProvider {
     func pokemon(for configuration: MyPokemonIntent) -> Pokemon {
         switch configuration.MyPokemon {
@@ -83,7 +79,7 @@ struct SmallWidgetEntryView : View {
     }
 }
 
-@main
+//@main
 struct SmallWidget: Widget {
     let kind: String = "SmallWidget"
 

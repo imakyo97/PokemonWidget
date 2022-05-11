@@ -16,6 +16,8 @@
 		E64221A22829EE5100C3724F /* SmallWidgetViewExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E64221912829EE5000C3724F /* SmallWidgetViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E64221A92829EF3100C3724F /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E673F49A2829E4560063FD40 /* Pokemon.swift */; };
 		E64221AC2829EF3400C3724F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E673F4902829E3580063FD40 /* Assets.xcassets */; };
+		E64221B0282B34D400C3724F /* MediumWidgetView.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E64221AF282B34D400C3724F /* MediumWidgetView.intentdefinition */; };
+		E64221B2282B35C100C3724F /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64221B1282B35C100C3724F /* MediumWidgetView.swift */; };
 		E673F48D2829E3570063FD40 /* PokemonWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E673F48C2829E3570063FD40 /* PokemonWidgetApp.swift */; };
 		E673F48F2829E3570063FD40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E673F48E2829E3570063FD40 /* ContentView.swift */; };
 		E673F4912829E3580063FD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E673F4902829E3580063FD40 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 		E642219B2829EE5100C3724F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E642219D2829EE5100C3724F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64221A72829EE9D00C3724F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E64221AF282B34D400C3724F /* MediumWidgetView.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MediumWidgetView.intentdefinition; sourceTree = "<group>"; };
+		E64221B1282B35C100C3724F /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
 		E673F4892829E3570063FD40 /* PokemonWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E673F48C2829E3570063FD40 /* PokemonWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonWidgetApp.swift; sourceTree = "<group>"; };
 		E673F48E2829E3570063FD40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			children = (
 				E64221982829EE5000C3724F /* SmallWidgetView.swift */,
 				E642219A2829EE5000C3724F /* SmallWidgetView.intentdefinition */,
+				E64221B1282B35C100C3724F /* MediumWidgetView.swift */,
+				E64221AF282B34D400C3724F /* MediumWidgetView.intentdefinition */,
 				E642219B2829EE5100C3724F /* Assets.xcassets */,
 				E642219D2829EE5100C3724F /* Info.plist */,
 			);
@@ -251,6 +257,8 @@
 			files = (
 				E64221A92829EF3100C3724F /* Pokemon.swift in Sources */,
 				E642219E2829EE5100C3724F /* SmallWidgetView.intentdefinition in Sources */,
+				E64221B2282B35C100C3724F /* MediumWidgetView.swift in Sources */,
+				E64221B0282B34D400C3724F /* MediumWidgetView.intentdefinition in Sources */,
 				E64221992829EE5000C3724F /* SmallWidgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
