@@ -31,8 +31,8 @@ struct MediumProvider: IntentTimelineProvider {
         let entry = MediumEntry(date: Date(), configuration: configuration, pokemons: pokemons(for: configuration))
         completion(entry)
     }
-
-    func getTimeline(for configuration: Intent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    
+    func getTimeline(for configuration: PokemonTypeIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         let entries: [MediumEntry] = [MediumEntry(date: Date(), configuration: configuration, pokemons: pokemons(for: configuration))]
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
@@ -49,63 +49,68 @@ struct MediumWidgetEntryView : View {
     var entry: MediumProvider.Entry
 
     var body: some View {
-        HStack {
-            Spacer()
-            Link(destination: entry.pokemons.first!.url) {
-                ZStack {
-                    Image("pokemonBackground")
-                        .resizable()
-                        .clipShape(ContainerRelativeShape())
-                    VStack(spacing: 10) {
-                        Image(entry.pokemons.first!.imageName)
+        ZStack {
+            Image("pokemonBackground")
+                .resizable()
+                .clipShape(ContainerRelativeShape())
+            HStack {
+                Spacer()
+                Link(destination: entry.pokemons.first!.url) {
+                    ZStack {
+                        Image("pokemonBackground")
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 90)
-                        Text(entry.pokemons.first!.name)
-                            .font(.body)
-                            .foregroundColor(.white)
-                            .bold()
+                            .clipShape(ContainerRelativeShape())
+                        VStack(spacing: 10) {
+                            Image(entry.pokemons.first!.imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 90)
+                            Text(entry.pokemons.first!.name)
+                                .font(.body)
+                                .foregroundColor(.white)
+                                .bold()
+                        }
                     }
+                    .frame(width: 110, height: 110)
                 }
-                .frame(width: 110, height: 110)
-            }
-            Link(destination: entry.pokemons[1].url) {
-            ZStack {
-                Image("pokemonBackground")
-                    .resizable()
-                    .clipShape(ContainerRelativeShape())
-                VStack(spacing: 10) {
-                    Image(entry.pokemons[1].imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 90)
-                    Text(entry.pokemons[1].name)
-                        .font(.body)
-                        .foregroundColor(.white)
-                        .bold()
-                }
-            }
-            .frame(width: 110, height: 110)
-            }
-            Link(destination: entry.pokemons.last!.url) {
-                ZStack {
-                    Image("pokemonBackground")
-                        .resizable()
-                        .clipShape(ContainerRelativeShape())
-                    VStack(spacing: 10) {
-                        Image(entry.pokemons.last!.imageName)
+                Link(destination: entry.pokemons[1].url) {
+                    ZStack {
+                        Image("pokemonBackground")
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 90)
-                        Text(entry.pokemons.last!.name)
-                            .font(.body)
-                            .foregroundColor(.white)
-                            .bold()
+                            .clipShape(ContainerRelativeShape())
+                        VStack(spacing: 10) {
+                            Image(entry.pokemons[1].imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 90)
+                            Text(entry.pokemons[1].name)
+                                .font(.body)
+                                .foregroundColor(.white)
+                                .bold()
+                        }
                     }
+                    .frame(width: 110, height: 110)
                 }
-                .frame(width: 110, height: 110)
+                Link(destination: entry.pokemons.last!.url) {
+                    ZStack {
+                        Image("pokemonBackground")
+                            .resizable()
+                            .clipShape(ContainerRelativeShape())
+                        VStack(spacing: 10) {
+                            Image(entry.pokemons.last!.imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 90)
+                            Text(entry.pokemons.last!.name)
+                                .font(.body)
+                                .foregroundColor(.white)
+                                .bold()
+                        }
+                    }
+                    .frame(width: 110, height: 110)
+                }
+                Spacer()
             }
-            Spacer()
         }
     }
 }

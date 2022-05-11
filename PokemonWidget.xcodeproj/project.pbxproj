@@ -18,6 +18,7 @@
 		E64221AC2829EF3400C3724F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E673F4902829E3580063FD40 /* Assets.xcassets */; };
 		E64221B0282B34D400C3724F /* MediumWidgetView.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E64221AF282B34D400C3724F /* MediumWidgetView.intentdefinition */; };
 		E64221B2282B35C100C3724F /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64221B1282B35C100C3724F /* MediumWidgetView.swift */; };
+		E64221B3282B82CD00C3724F /* MediumWidgetView.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E64221AF282B34D400C3724F /* MediumWidgetView.intentdefinition */; };
 		E673F48D2829E3570063FD40 /* PokemonWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E673F48C2829E3570063FD40 /* PokemonWidgetApp.swift */; };
 		E673F48F2829E3570063FD40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E673F48E2829E3570063FD40 /* ContentView.swift */; };
 		E673F4912829E3580063FD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E673F4902829E3580063FD40 /* Assets.xcassets */; };
@@ -267,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64221B3282B82CD00C3724F /* MediumWidgetView.intentdefinition in Sources */,
 				E642219F2829EE5100C3724F /* SmallWidgetView.intentdefinition in Sources */,
 				E673F49D2829E4AA0063FD40 /* PokemonView.swift in Sources */,
 				E673F48F2829E3570063FD40 /* ContentView.swift in Sources */,

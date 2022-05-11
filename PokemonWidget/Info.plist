@@ -5,6 +5,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>MyPokemonIntent</string>
+		<string>PokemonTypeIntent</string>
 	</array>
 </dict>
 </plist>
