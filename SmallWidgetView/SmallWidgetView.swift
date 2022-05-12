@@ -44,9 +44,9 @@ struct SmallProvider: IntentTimelineProvider {
         completion(entry)
     }
 
-    func getTimeline(for configuration: MyPokemonIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(for configuration: Intent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         let entries: [SmallEntry] = [SmallEntry(date: Date(), configuration: configuration, pokemon: pokemon(for: configuration))]
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+        let timeline = Timeline(entries: entries, policy: .never)
         completion(timeline)
     }
 }

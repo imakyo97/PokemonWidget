@@ -32,9 +32,9 @@ struct MediumProvider: IntentTimelineProvider {
         completion(entry)
     }
     
-    func getTimeline(for configuration: PokemonTypeIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(for configuration: Intent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         let entries: [MediumEntry] = [MediumEntry(date: Date(), configuration: configuration, pokemons: pokemons(for: configuration))]
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+        let timeline = Timeline(entries: entries, policy: .never)
         completion(timeline)
     }
 }
